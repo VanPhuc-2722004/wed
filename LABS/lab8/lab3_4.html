@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* CSS cho phần nhập thông tin sinh viên */
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #ketQua {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Nhập thông tin sinh viên</h2>
+    
+    <label for="hoTen">Họ và Tên:</label>
+    <input type="text" id="hoTen" placeholder="Nhập họ tên">
+
+    <label for="diem">Điểm:</label>
+    <input type="number" id="diem" placeholder="Nhập điểm">
+
+    <button onclick="tinhDiem()">Hiển thị thông tin</button>
+
+    <div id="ketQua"></div>
+
+    <!-- Đoạn mã JavaScript để xử lý hiển thị thông tin sẽ được thêm sau -->
+</body>
+</html>

@@ -1,0 +1,130 @@
+body {
+  background-color: #FFFFFF; /* Màu nền hồng phấn */
+  color: #FFFFFF; /* Màu chữ trắng */
+  
+}
+a{
+	text-decoration: none;
+}
+.card {
+  width: 250px;
+  height: auto;
+  border: 1px solid #FFFFFF; /* Đường viền trắng */
+  margin: 10px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  background-color: #FFFFFF; /* Màu nền trắng cho thẻ */
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-label {
+  background-color: #FFC0CB; /* Màu nền hồng phấn cho nhãn */
+  color: #FFFFFF; /* Màu chữ trắng */
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-name {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #000000; /* Màu chữ đen */
+}
+
+.card-price {
+  color: #FFC0CB; /* Màu chữ hồng phấn */
+  font-weight: bold;
+  display: flex; /* Sử dụng flexbox để căn chỉnh các thành phần */
+  justify-content: space-between;
+}
+
+.card-discount {
+  color: #FF0000; /* Màu chữ đỏ */
+  font-weight: bold;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.card-rating {
+  color: #C0C0C0; /* Màu chữ bạc */
+  font-size: 18px;
+}
+.khung {
+  width: 100%; /* Chiều rộng tối đa của div */
+  max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+  margin: 0 auto; /* Căn giữa div và loại bỏ margin bên trái */
+  box-sizing: border-box; /* Đảm bảo rằng padding và border không làm tăng kích thước của div */
+  padding: 20px; /* Thêm padding cho div */
+}
+
+.khung > span {
+  margin-left: 0;
+  margin-right: auto;
+  font-size: 24px; /* Tăng kích thước chữ */
+  color: black; /* Đổi màu chữ thành đen */
+}
+.khung2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding: 0; /* Loại bỏ padding */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto; /* Căn giữa container và loại bỏ margin bên trái */
+  max-width: 1200px; /* Giới hạn bề ngang của container */
+  box-sizing: border-box; /* Đảm bảo rằng padding và border không làm tăng kích thước của container */
+}
+
+.cell {
+  width: 100%; /* Chiều rộng tối đa của thẻ */
+  max-width: 290px; /* Giới hạn chiều rộng tối đa */
+  background: #fff;
+  border-radius: 10px; /* Thêm bo góc */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Thêm bóng */
+}
+.cell:hover {
+  background-color: #FFC0CB; /* Thay đổi màu nền khi di chuột qua */
+}
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* khoảng cách giữa hai nút */
+  align-items: stretch; /* căn chỉnh theo chiều ngang */
+  justify-content: center; /* căn giữa theo chiều dọc */ /* căn giữa theo chiều dọc */
+}
+
+.card-buttons button {
+  width: 100%; /* chiếm hết bề ngang của hàng */
+  height: 50px; /* chiều cao của nút */
+  padding: 10px; /* đệm cho nút */
+  margin: 0; /* không có lề */
+  text-align: center; /* căn giữa chữ */
+  border: none; /* không viền */
+  border-radius: 5px; /* bo góc */
+  cursor: pointer; /* con trỏ chuột */
+}
+
+.add-to-cart {
+  background-color: #008CBA; /* màu nền */
+  color: white; /* màu chữ */
+}
+
+.buy-now {
+  background-color: #f44336; /* màu nền */
+  color: white; /* màu chữ */
+}
+
+.add-to-cart:hover, .buy-now:hover {
+  opacity: 1.0; /* độ mờ khi di chuột vào */
+}
+

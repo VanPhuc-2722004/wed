@@ -1,0 +1,106 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font: 14px/18px Arial,Helvetica,sans-serif;
+	background: #f3f3f3;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*banner - quảng cáo*/
+section.big-banner{
+	display: flex;
+	justify-content: center;
+}
+
+section.big-banner a{
+	width: 1520;
+	height: 450px;
+	overflow: hidden;
+}
+
+section.big-banner a img{
+	margin-left: -200px;
+}
+
+/*hình tròn - tin nhắn*/
+.hinh-tron{
+  background-color: #FFC0CB;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+  background-image: url(https://livehelp.tgdd.vn/var/storagetheme/2022y/12/14/2/5ec44ff7f62166ca44d343a1cd355cb6.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body main{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+main .container{
+	width: 1200px;
+/*	background: white;*/
+	box-sizing: border-box;
+	border-radius: 15px;
+}
+
+main .container .phan1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+main .container .phan1 img{
+	width: 595px;
+	box-sizing: border-box;
+	border-radius: 15px;
+}
+
+main .container .btn-quay-ve{
+	background: white;
+	opacity: 0.6;
+	border-radius: 50%;
+	height: 44px;
+	width: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	box-shadow: 0px 0px 6px 1px #888888;
+	position: relative;
+	top: -113px;
+	left: -21px;
+}
+
+main .container .btn-tien-len{
+	background: white;
+	opacity: 0.6;
+	border-radius: 50%;
+	height: 44px;
+	width: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	box-shadow: 0px 0px 6px 1px #888888;
+	position: relative;
+	top: -155px;
+	right: -1178px;
+}
+
+main .container .btn-quay-ve i{
+	font-size: 35px;
+}
+main .container .btn-tien-len i{
+	font-size: 35px;
+}

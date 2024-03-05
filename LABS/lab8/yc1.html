@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay đổi hình ảnh</title>
+    <style>
+        #imageContainer {
+            text-align: center;
+        }
+
+        #hinh1 {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #hinh1:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<div id="imageContainer">
+    <img src="imgs/avat1.jpg" id="hinh1" onmouseover="traohinh()">
+</div>
+
+<script>
+    var linkgoc;
+    var thaythe = "imgs/avat2.jpg";
+
+    function traohinh() {
+        var hinh1 = document.getElementById("hinh1");
+        if (!linkgoc) {
+            linkgoc = hinh1.src;
+        }
+        hinh1.src = thaythe;
+    }
+    document.getElementById("hinh1").onmouseout = function() {
+        if (linkgoc) {
+            this.src = linkgoc;
+        }
+    };
+</script>
+
+</body>
+</html>

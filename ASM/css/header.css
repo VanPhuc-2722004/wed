@@ -1,0 +1,272 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font: 14px/18px Arial,Helvetica,sans-serif;
+	background: #f3f3f3;
+}
+header nav .header_logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 5px solid #3b3d4e93;
+    cursor: pointer;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+header{
+	background: #FFC0CB;
+	height: 158px;
+}
+
+header nav:first-child{	
+	height: 44px;
+	background: #FFC0CB;	
+}
+
+header nav div{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+header nav:nth-child(2){
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	display: flex;
+}
+
+header nav:nth-child(2) a:first-child div{
+	width: 228px;
+	height: 40px;
+	background-image:url('Screenshot\ 2024-01-10\ 080819.png');
+	background-position: 0px -176px;
+	background-repeat: no-repeat;
+	background-size: cover; /* hoặc 'contain' */
+	position: relative;
+	top: 10px;
+	padding-right: 15px;
+}
+
+
+header nav:nth-child(2) a:nth-child(2) div{
+	width: 137px;
+	height: 40px;
+	position: relative;
+	top: 10px;
+	background: rgb(254, 254, 254);
+	color: black;
+	font-size: 11px;
+	border-radius: 4px;
+}
+
+header nav:nth-child(2) a:nth-child(2){
+	margin-right: 21px;
+}
+
+header nav:nth-child(2) a:nth-child(2) div span:first-child{
+	position: absolute;
+	top: 5px;
+	left: 10px;
+}
+
+header nav:nth-child(2) a:nth-child(2) div span:nth-child(2){
+	font-weight: bold;
+	position: absolute;
+	top: 20px;
+	left: 10px;
+}
+
+header nav:nth-child(2) a:nth-child(2) div span:nth-child(3){
+	position: absolute;
+	top: 17px;
+	left: 120px;
+	width: 0px; 
+	height: 0px; 
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;  
+	border-top: 6px solid black;
+}
+
+header nav:nth-child(2) .a-form{
+	padding: 10px 0px 0px 0px;
+	margin-right: 21px;
+}
+
+header nav:nth-child(2) a:nth-child(3) form{
+	background: white;
+	width: 301px;
+	border-radius: 4px;	
+}
+
+header nav:nth-child(2) a:nth-child(3) form input{
+	border: none;
+	outline: none;
+	width: 266px;
+	height: 40px;
+	padding: 0px 0px 0px 14px;
+	border-radius: 4px;
+	font-size: 12px;
+}
+
+header nav:nth-child(2) a:nth-child(3) form i{
+	font-size: 17px;
+	box-sizing: border-box;
+	position: relative;
+	top: 4px;
+	right: 8px;
+}
+
+header nav:nth-child(2) a:nth-child(4){
+	padding: 10px 0px 0px 0px;
+}
+
+header nav:nth-child(2) a:nth-child(4) div{
+	width: 96px;
+	height: 40px;
+	background: rgb(254, 254, 254);
+	border-radius: 4px;
+}
+
+header nav:nth-child(2) a:nth-child(4) div span:first-child{
+	color: black;
+	font-size: 12px;
+	position: relative;
+	top:4px;
+	left: 17px;
+	
+}
+
+
+header nav:nth-child(2) a:nth-child(4) div span:nth-child(2){
+	color: black;
+	font-size: 12px;
+	position: relative;
+	top:18px;
+	left: -30px;
+}
+
+header nav:nth-child(2) a:nth-child(5){
+	padding: 10px 0px 0px 0px;
+	margin-left: 21px;
+}
+
+header nav:nth-child(2) a:nth-child(5) div{
+	width: 112px;
+	height: 40px;
+	background: #FFC0CB;
+	border-radius: 4px;
+}
+
+header nav:nth-child(2) a:nth-child(5) div .div-img{
+	width: 25px;
+	height: 25px;
+	background-image: url(https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_75/https://cdn.tgdd.vn/mwgcart/mwg-site/ContentMwg/images/homev2/desk/iconnew.png);
+	background-position: -48px 0;
+	background-repeat: no-repeat;
+	background-size: 310px 257px;
+	position: relative;
+	top: 10px;
+	left: -30px;
+}
+header nav:nth-child(2) a:nth-child(5) div #soLuongTrongGio {
+	/* Thêm các thuộc tính CSS mà bạn muốn áp dụng cho #soLuongTrongGio ở đây */
+	display: inline-block;
+	
+	color: #fff;
+	
+	border-radius: 50%;
+	font-size: 10px;
+	position: absolute;
+	top: 10%;
+	left: 68%;
+	transform: translate(-50%, -50%);
+  }
+  
+
+header nav:nth-child(2) a:nth-child(5) div span{
+	font-weight: 700;
+	font-size: 12px;
+	position: relative;
+	top: -14px;
+	left: 48px;
+	color: black;
+}
+
+header nav:nth-child(2) #a6 a{
+	font-size: 14px;
+	color: black;
+}
+
+header nav:nth-child(2) #a6 a span:first-child{
+	position: relative;
+	top: 21px;
+	left: 15px;
+	
+}
+
+header nav:nth-child(2) #a6 a span:nth-child(2){
+	position: relative;
+	top: 11px;
+	left: 18px;
+	display: block; 
+	width: 69px;
+}
+
+header nav:nth-child(2) #a7 a span{
+	display: block !important;
+	color: black;
+	font-size: 14px;
+	position: relative;
+	top: 21px;
+	left: 28px;
+}
+
+header nav:nth-child(2) #a8 a span{
+	color: black;
+	font-size: 14px;
+	position: relative;
+	top: 21px;
+	left: 13px;
+}
+
+header nav:nth-child(3){
+	width: 1200px;
+	height: 64px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav:nth-child(3) a{
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+header nav:nth-child(3) a span{
+	color: black;
+	font-size: 14px;
+	margin: 0px 5px 0px 5px;
+}
+
+header nav:nth-child(3) a img{
+	width: 20px;
+	height: 20px;
+}
+
+header nav:nth-child(3) a i{
+	width: 0; 
+	height: 0; 
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;  
+	border-top: 6px solid black;
+}

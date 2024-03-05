@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sanpham.css">
+    <link rel="stylesheet" href="css/chitietgiohang.css">
+
+    <title>🌴 ・ Văn Phúc</title>
+</head>
+<body>
+   
+<!-- Thêm thẻ script này ở cuối body hoặc trong tệp JavaScript bên ngoài của bạn -->' <div class="product">' +
+   ' <div class="img">'+
+    ' <div class="product-image">'+
+       '<img src="' + productData.img + '" alt="+" class="card-image" />'+
+    ' </div>'+
+    
+    ' <div class="image-slider">'+
+    '<button class="slider-nav slider-prev">❮</button>'+
+      ' <img src="img/products/huawei-mate-20-pro-green-600x600.jpg" alt="Slide 1" class="slider-image" />'+
+       '<img src="img/products/ipad-wifi-32gb-2018-thumb-600x600.jpg" alt="Slide 1" class="slider-image" />'+
+      ' <img src="img/products/iphone-7-plus-32gb-hh-600x600.jpg" alt="Slide 1" class="slider-image" />'+
+      ' <img src="img/products/mobiistar-b310-orange-600x600.jpg" alt="Slide 1" class="slider-image" />'+
+       '<img src="img/products/huawei-mate-20-pro-green-600x600.jpg" alt="Slide 1" class="slider-image" />'+
+      ' <img src="img/products/nokia-51-plus-black-18thangbh-400x400.jpg" alt="Slide 1" class="slider-image" />'+
+      ' <img src="img/products/huawei-y5-2017-300x300.jpg" alt="Slide 2" class="slider-image" />'+
+       '<img src="img/products/xiaomi-redmi-note-5-pro-600x600.jpg" alt="Slide 3" class="slider-image" />'+
+      ' <button class="slider-nav slider-next">❯</button>'+
+     '</div>'+
+  ' </div>'+
+  
+   
+     ' <div class="product-details"> '+
+        '<div class="product-title"> '+ productData.name +'</div>' +
+        '<div class="product-price"> '+ productData.price +'</div> '+
+       ' <div class="specifications">' +
+           productData.detail.screen +'<br>' +
+           productData.detail.os +'<br> '+
+           productData.detail.camara +'<br> '+
+           productData.detail.camaraFront +'<br> '+
+           productData.detail.cpu +'<br> '+
+           productData.detail.ram +'<br> '+
+           productData.detail.rom +'<br> '+
+           productData.detail.microUSB +'<br> '+
+           productData.detail.battery +
+        '</div>' +
+        '<div class="option-buttons"> '+
+         ' <button class="option-button">128GB</button>' +
+   
+           
+         ' <button class="option-button">512GB</button>' +
+          '<button class="option-button">1TB</button>' +
+        '</div>' +
+        '<div class="product-stats">' +
+          '<div class="product-rating">' + "★★★★★ " + productData.rateCount + " đánh giá" +'</div>' +
+         ' <div class="product-purchases">' + "🛒 " + productData.rateCount + " lượt mua" +'</div>' +
+          '<div class="product-quantity">' + 
+           
+            '<input type="number" value="1" min="1" class="quantity-input"> '+
+             
+          '</div>' +
+        '</div>' +
+       ' <div class="buttons">' +
+          '<div class="add-to-cart">'+ "🛒 " + "Thêm vào giỏ hàng" +'</div>' +
+          '<div class="buy-now">' + "Mua ngay" +'</div>' +
+        '</div>' +
+        '<div class="promotion">' + "  KHUYẾN MÃI: Sản phẩm sẽ được giảm  " + productData.promo.value + "  khi mua hàng online bằng thẻ VPBank hoặc tin nhắn SMS" +'</div>' +
+      '</div>' +
+    '</div>'
+
+
+</body>
+<script src="js/chitietsanpham.js"></script>
+<script src="data/sanpham.js"></script>
+
+</html>

@@ -1,0 +1,33 @@
+/* CSS */
+.brand-bar {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các mục di chuyển xuống hàng tiếp theo khi không còn đủ không gian */
+    justify-content: center; /* Căn giữa các mục theo chiều ngang */
+    align-items: center;
+    width: 90%;
+    padding: 20px;
+    padding-left: 120px;
+}
+
+.brand-button {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+
+.brand-button:hover img {
+    transform: scale(1.1); /* Phóng to hình ảnh khi di chuột qua */
+}
+
+.brand-button img {
+    width: 100%; /* Điều chỉnh kích thước hình ảnh */
+    height: 30px;
+    object-fit: contain; /* Đảm bảo hình ảnh không bị biến dạng */
+}

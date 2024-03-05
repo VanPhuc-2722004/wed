@@ -1,0 +1,14 @@
+#div1, #div2 {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#drag1 {
+    margin: 0;
+    padding: 20px;
+    color: white;
+    background: skyblue;
+    border-radius: 3px;
+}

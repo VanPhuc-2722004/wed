@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+<!-- Tải lên một tệp -->
+<input type="file" id="singleFileUpload">
+
+<!-- Tải lên nhiều tệp -->
+<input type="file" id="multipleFilesUpload" multiple>
+
+<script>
+document.getElementById('singleFileUpload').addEventListener('change', function() {
+    console.log('Đã chọn một tệp:', this.files[0].name);
+});
+
+document.getElementById('multipleFilesUpload').addEventListener('change', function() {
+    console.log('Đã chọn nhiều tệp:', Array.from(this.files).map(file => file.name));
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/lab7_5.css">
+    <script src="js/lab7_5.js"></script>
+</head>
+<body>
+    <form id="orderForm" onsubmit="return kiem_tra()">
+        <label for="san_pham">Sản phẩm:</label><br>
+        <input type="text" id="san_pham" name="san_pham"><br>
+        <label for="loai">Loại:</label><br>
+        <select id="loai" name="loai">
+            <option value="">Chọn loại sản phẩm</option>
+            <!-- Thêm các tùy chọn khác tại đây -->
+        </select><br>
+        <label for="don_gia">Đơn giá:</label><br>
+        <input type="text" id="don_gia" name="don_gia"><br>
+        <label for="dia_chi">Nơi nhận hàng:</label><br>
+        <input type="radio" id="noi_thanh" name="dia_chi" value="noi_thanh" onclick="hien_thi(false)"> Nội thành<br>
+        <input type="radio" id="ngoai_thanh" name="dia_chi" value="ngoai_thanh" onclick="hien_thi(true)"> Ngoại thành<br>
+        <div id="phi_vc" style="display: none;">Phí vận chuyển: 100000</div>
+        <input type="submit" value="Đặt mua">
+    </form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Đăng nhập</title>
+    <link rel="icon" type="image/x-icon" href="img/avat1.jpg">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <a href="index.html"><img src="img/avat1.jpg" alt="" class="logo"></a>
+            <span class="foodyu">FOODYU</span>
+            <span class="banner">ĐĂNG NHẬP</span>
+        </div>
+        <span class="help">Bạn cần giúp đỡ?</span>
+    </div>
+    
+    <div class="login-container">
+        <h2>Đăng nhập</h2>
+        <form action="/action_page.php" method="post">
+            <label for="uname"><b>Email hoặc số điện thoại</b></label>
+            <input type="text" placeholder="Nhập Email hoặc số điện thoại" name="uname" id="uname" required>
+            <div class="error-message" id="uname-error"></div>
+            <label for="psw"><b>Mật khẩu</b></label>
+            <input type="password" placeholder="Nhập mật khẩu" name="psw" id="psw" required>
+            <div class="error-message" id="psw-error"></div>
+            <button type="submit" class="btn">ĐĂNG NHẬP</button>
+            <p>Bạn mới biết đến FOODYU? <a href="register.html">Đăng ký</a></p>
+        </form>
+    </div>
+    
+    <script src="js/login.js"></script>
+</body>
+</html>

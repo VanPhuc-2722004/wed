@@ -1,0 +1,75 @@
+/* Center the image and add a subtle shadow on hover */
+.hover_image {
+    text-align: center;
+}
+
+.hover_image img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hover_image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Add space and center the slider wrapper */
+.wrapper_slider {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Apply border-radius and shadow to images in the slider */
+.wrapper_slider img {
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.wrapper_slider img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Add border-radius and shadow to all images */
+img {
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Center buttons and add some styling */
+.wrapper_btn {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.wrapper_btn button {
+    margin: 0 10px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.wrapper_btn button:hover {
+    background-color: #45a049;
+}

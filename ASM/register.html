@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dăngd kí</title>
+
+	<!-- favicon - biểu tượng -->
+	<link rel="icon" type="image/x-icon" href="img/avat1.jpg">
+
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <a href="index.html"><img src="img/avat1.jpg" alt="" class="logo"></a>
+           <span style="color: #FFC0CB;font-weight: bold; /* Chữ in đậm */">FOODYU</span>
+           <span style="padding-left:40px ;">Đăng Kí</span>
+        </div>
+        <span class="help" style="color: #FFC0CB; padding-right: 20px;">Bạn cần giúp đỡ?</span>
+    </div>
+    
+    
+    <div class="login-container" style="margin-top: 100px;">
+        <h2>Đăng Kí</h2>
+        <form action="/action_page.php" method="post">
+            <label for="uname"><b>Email hoặc số điện thoại</b></label>
+            <input type="text" placeholder="Nhập Email hoặc số điện thoại" name="uname" required>
+            <div class="error-message" id="uname-error"></div>
+            <button type="submit" class="btn">Tiếp Theo</button>
+            <div class="login-options">
+                <p>HOẶC</p>
+                <button class="social-button facebook-button">
+                    <i class="fab fa-facebook-square"></i> Facebook
+                </button>
+                <button class="social-button google-button">
+                    <i class="fab fa-google"></i> Google
+                </button>
+            </div>
+            <p class="agreement">Bằng việc đăng kí, bạn đã đồng ý với Shopee về <a href="#">Điều khoản dịch vụ & Chính sách bảo mật</a></p>
+            <p class="existing-account">Bạn đã có tài khoản? <a href="login.html" class="login-link">Đăng nhập</a></p>
+            
+        </form>
+    </div>
+    
+   <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+    var unameInput = document.getElementById("uname");
+    var pswInput = document.getElementById("psw");
+
+    var unameError = document.getElementById("uname-error");
+    var pswError = document.getElementById("psw-error");
+
+    unameInput.addEventListener('input', function() {
+        var value = this.value;
+        if (!isValidEmailOrPhone(value) && value.trim() !== '') {
+            showErrorMessage(unameError, 'Email hoặc số điện thoại không hợp lệ.');
+        } else {
+            hideErrorMessage(unameError);
+        }
+    });
+
+    pswInput.addEventListener('input', function() {
+        var value = this.value;
+        if (!isValidPassword(value) && value.trim() !== '') {
+            showErrorMessage(pswError, 'Mật khẩu phải có ít nhất 8 ký tự, bao gồm cả chữ và số.');
+        } else {
+            hideErrorMessage(pswError);
+        }
+    });
+
+    document.querySelector('.btn').addEventListener('click', function(event) {
+        event.preventDefault();
+
+        var uname = document.querySelector('input[name="uname"]').value;
+        var psw = document.querySelector('input[name="psw"]').value;
+
+        var modal = document.getElementById("myModal");
+        var span = document.getElementsByClassName("close")[0];
+        var modalText = document.getElementById("modalText");
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        if (!uname || !psw) {
+            modalText.innerHTML = 'Vui lòng không để trống bất kỳ trường nào.';
+            modal.style.display = "block";
+        } else {
+            // Kiểm tra tính hợp lệ của email hoặc số điện thoại
+            var emailPhoneRegex = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            if (!emailPhoneRegex.test(uname)) {
+                modalText.innerHTML = 'Email hoặc số điện thoại không hợp lệ.';
+                modal.style.display = "block";
+                return;
+            }
+
+            // Kiểm tra mật khẩu có ít nhất 8 ký tự, bao gồm cả chữ và số
+            var passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+            if (!passwordRegex.test(psw)) {
+                modalText.innerHTML = 'Mật khẩu phải có ít nhất 8 ký tự, bao gồm cả chữ và số.';
+                modal.style.display = "block";
+                return;
+            }
+
+            // Tiếp tục xử lý đăng nhập
+        }
+    });
+
+    function isValidEmailOrPhone(inputValue) {
+        var emailPhoneRegex = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        return emailPhoneRegex.test(inputValue);
+    }
+
+    function isValidPassword(inputValue) {
+        var passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+        return passwordRegex.test(inputValue);
+    }
+
+    function showErrorMessage(element, message) {
+        element.textContent = message;
+        element.style.display = 'block';
+    }
+
+    function hideErrorMessage(element) {
+        element.textContent = '';
+        element.style.display = 'none';
+    }
+});
+
+   </script>
+</body>
+</html>

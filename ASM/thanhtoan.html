@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Thanh toán</title>
+
+    <!-- favicon - biểu tượng -->
+    <link rel="icon" type="image/x-icon" href="img/avat1.jpg">
+  
+    <link rel="stylesheet" href="css/thanhtoan.css">
+    <script src="js/dungchung.js"></script>
+    <script src="data/sanpham.js"></script>
+    <script src="https://kit.fontawesome.com/ca0af6f06b.js" crossorigin="anonymous"></script>    
+
+</head>
+<body>
+    <div class="header" style="width: 100%;padding-right: 50px;">
+        <div class="logo-container">
+          <a href="index.html"><img src="img/avat1.jpg" alt="" class="logo"></a>
+           
+           <span style="color: #FFC0CB;font-weight: bold; /* Chữ in đậm */">FOODYU</span>
+           <span style="padding-left:40px ;">Thanh toán</span>
+        </div>
+        <span class="help" style="color: #FFC0CB; padding-right: 20px;">Bạn cần giúp đỡ?</span>
+    </div>
+    <script> addgiohang();</script>
+    <!-- Payment Methods -->
+    <section class="payment-methods" style="width: 100%;">
+      <article>
+        <i class="fas fa-wallet" style="width: 60px;"></i>
+        <h3>Thanh toán khi nhận hàng</h3>
+      </article>
+      <article>
+        <img src="img/bidv.png" alt="BIDV" style="width: 60px;">
+        <h3>BIDV </h3>
+      </article>
+      <article>
+        <img src="img/mb.png" alt="MB" style="width: 60px;">
+        <h3>MB </h3>
+      </article>
+    </section>
+
+    <!-- Order Summary -->
+    <section class="order-summary">
+      <table>
+        <tr>
+          <th>Tổng tiền hàng:</th>
+          <td>318.000 ₫</td>
+        </tr>
+        <tr>
+          <th>Phí vận chuyển:</th>
+          <td>38.000 ₫</td>
+        </tr>
+        <tr class="total">
+          <th>Tổng thanh toán:</th>
+          <td>356.000 ₫</td>
+        </tr>
+      </table>
+      <button >Đặt hàng</button>
+      <p>Nhấn "Đặt hàng" đồng nghĩa với việc bạn đồng ý tuân thủ Điều Khoản</p>
+    </section>  
+    <script> addDanhsachsp(); </script>
+    <script> addFooter(); </script>
+</body>
+</html>
